@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Blog, profile">
+  <meta name="description" content="멋진 블로그">
+  <meta name="author" content="Harin Shin, 신하린">
+  <title>웹프로그래밍 신하린 | 홈</title>
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+  <audio src="./music/Yonce.mp3" autoplay controls></audio>
+  <header>
+    <div class="container">
+      <!-- 홈페이지 메인 제목이랑 메뉴들 넣어놓을 공간. -->
+      <div id="branding">
+        <h1><span class="highlight">웹</span>프로그래밍 하린</h1>
+      </div>
+      <nav>
+        <!-- 일반적으로 nav는 메뉴 만들때 사용하는 태그임. -->
+        <ul>
+          <li class="current"> <a href="home.html">Home</a></li>
+          <li> <a href="profile.html">Profile</a></li>
+          <li> <a href="study.html">Study</a></li>
+          <li> <a href="team.html">TeamPage</a></li>
+          <li> <a href="together.html">Together</a></li>
+          <!-- 메뉴는 클릭하면 그 페이지로?화면으로? 이동해야하기 떄문에 링크 설정 필수. -->
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="showcase">
+    <!-- 배너부분 (메인화면 큰 이미지?) -->
+    <div class="container">
+      <!-- 태그 없이 .container >> div 태그 생성 (그냥 간단한 팁) -->
+      <h1>웹프로그래밍 중간고사 홈페이지</h1>
+      <h2>92015219 신하린</h2>
+      <p>
+        2021년, 정보보호학전공 2학년
+      </p>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="container">
+      <h1>뉴스레터 구독 신청 </h1>
+      <form action="">
+        <input type="email" placeholder="Enter your E-mail...">
+        <button type="submit" class="button_1">
+          구독신청
+        </button>
+      </form>
+    </div>
+  </section>
+  <!-- 
+  <section id="longlist">
+    <div class="long">
+      <img src="./img/long.jpg">
+      <h3>목록만들거임</h3>
+    <li>
+      목록1
+    </li>
+    <p>목록-1</p><br>
+    <li>
+      목록2
+    </li>
+    <p>목록-2</p><br>
+    <li>
+      목록3
+    </li>
+    <p>목록-3</p><br> 
+    </div>
+  </section> -->
+
+  <section id="boxes">
+    <div class="container">
+      <div class="box">
+        <a href="profile.html"><img src="./img/logo.jpg"></a>
+        <h3>내 프로필 간단히</h3>
+        <p>
+          사진은 내 사진 하던가, 다른사진 하던가 ... 하고, 내 프로필 몇줄 간단하게
+          이메일, 학번 이름, 수업 과목명.. 등등.. 사진 클릭하거나 박스 클릭하면 프로필 메뉴로 이동하기!
+        </p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt cumque pariatur aliquam explicabo eos.
+          Temporibus recusandae voluptatem cumque officiis aut ipsum, eius minima eum dolores nulla, quae obcaecati
+          illo?</p>
+      </div>
+      <div class="box">
+        <img src="./img/logo.jpg">
+        <h3>뭐할까?</h3>
+        <p>
+          무슨 내용 넣을지 생각중..
+        </p><br>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, adipisci! Voluptatum obcaecati est
+          reprehenderit expedita dolor, iste ullam officiis dicta explicabo nobis distinctio cumque nostrum deserunt.
+          Voluptates non inventore odit.</p>
+      </div>
+      <div class="box">
+        <a href="team.html"><img src="./img/logo.jpg"></a>
+        <h3>팀프로젝트</h3>
+        <p>
+          이미지 클릭하면 팀 홈페이지로 링크되도록.
+          팀 주제랑, 팀원 이름 적기
+        </p><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis temporibus aliquam quidem eum mollitia,
+          vero reprehenderit quibusdam quo molestias quam ratione corporis impedit velit veniam ut culpa repellendus, ab
+          voluptates.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>
+      Copyright &copy; 2021, 중부대학교 신하린
+      <!-- &copy; >> 약속된 그림문자(ⓒ), 홈페이지 맨 밑에 주석같은거 > footer로 태그 -->
+    </p>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,333 @@
+/* Body */
+body{
+  font: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin:0;
+  background-color: #f4f4f4;
+}
+
+
+/* Header */
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.dark{
+  padding:15px;
+  background-color: #35424a;
+  color:white;
+  margin:15px;
+}
+
+header{
+  /* 헤더 */
+  background-color: rgb(230, 129, 129);
+  color:white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(117, 255, 25) 3px solid;
+}
+
+header a{
+  /* 헤더 안의 a (링크) */
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+header li{
+  /* 헤더 안의 list */
+  display:inline;
+  padding:0 10px;
+  /* 위아래 좌우 (간격) */
+  float: left;
+  /* 왼쪽 정렬 */
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a {
+  /* 클릭되어있는 메뉴 반응 */
+  color: rgb(117, 255, 25);
+  font-weight: bold;
+}
+
+header a:hover{
+  /* 커서 올라갈때 반응 */
+  color: #aaaaaa;
+  font-weight: bold;
+}
+
+
+/* Showcase */
+/* 배너 */
+#showcase {
+  min-height: 400px;
+  background: url('../img/vener2.jpg') no-repeat 400px 50px;
+  text-align: center;
+  color: rgb(112, 158, 255);
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+
+
+/* Newsletter */
+#newsletter {
+  background-color: #15a5ff;
+  padding: 15px;
+  color: white;
+}
+
+#newsletter h1{
+  float:left;
+}
+
+#newsletter form{
+  float:right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+  padding:4px;
+  height:25px;
+  width:250px;
+}
+
+.button_1{
+  height:38px;
+  background-color: #e8491d;
+  border:0;
+  padding: 0 20px;
+  color:white;
+}
+
+/* left list */
+#longlist{
+  margin-top: 20px;
+  /* background: url('../img/long.jpg') no-repeat 50px 50px; */
+}
+
+#longlist .long{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#longlist .long img{
+  width:40%;
+  height:100%;
+}
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width:40px;
+  height:50px;
+}
+
+
+
+
+
+
+
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+}
+
+
+/* Service */
+ul#service{
+  list-style: none;
+  padding:20px;
+  border:#cccccc solid 1px;
+  background-color: #e6e6e6;
+  margin-bottom: 5px;
+}
+
+/* Media Quaries */
+/* 폭 맞출때 변환 */
+@media(max-width: 768px) {
+  /* 768px이 기본적인 모바일 폭이라고 생각하면됨 */
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar
+  {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  #showcase h1{
+    margin-top: 30px;
+    font-size:35px;
+    margin-bottom: 10px;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #newsletter button, .quote button, header li{
+    display:block;
+    width:100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea {
+    width:100%;
+    margin-bottom: 5px;
+  }
+
+}
+
+
+
+
+/* List */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+caption {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.board_list_wrap {
+  padding: 50px;
+}
+
+.board_list {
+  width: 100%;
+  border-top: 2px solid green;
+}
+
+.board_list tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.board_list th,
+.board_list td {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.board_list td {
+  text-align: center;
+}
+
+.board_list .tit {
+  text-align: left;
+}
+
+.board_list .tit:hover {
+  text-decoration: underline;
+}
+
+.board_list_wrap .paging {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0;
+}
+.board_list_wrap .paging a {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  font-size: 12px;
+}
+.board_list_wrap .paging a:first-child {
+  margin-left: 0;
+}
+
+.board_list_wrap .paging a.bt {
+  border: 1px solid #eee;
+  background: #eee;
+}
+
+.board_list_wrap .paging a.num {
+  border: 1px solid green;
+  font-weight: 600;
+  color: green;
+}
+
+.board_list_wrap .paging a.num.on {
+  background: green;
+  color: #fff;
+}
+
+
+
+/* Footer */
+footer{
+  padding:20px;
+  margin-top:20px;
+  margin-bottom: 20px;
+  color:white;
+  background-color: #2d2fa1;
+  text-align: center;
+}
